@@ -1,0 +1,10 @@
+<!--pages/product/product.wxml-->
+<view class="all">
+    <view class="search">
+        <image class="s-img" src="" mode="aspectFit|aspectFill|widthFix"/>
+        <text class="s-txt">搜索商品</text>
+    </view>
+    <view class="main">
+        
+    </view>
+</view>

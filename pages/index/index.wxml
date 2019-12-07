@@ -1,0 +1,85 @@
+<!--index.wxml-->
+<view class="main">
+   <!-- 企业图片 -->
+   <cover-image class="big-img" src="../../images/index.jpg"/>
+   <!-- 消息栏 -->
+   <view class="message">
+      <image class="m-img" src="../../icons/message.png" mode="scaleToFill" lazy-load="false"/>
+      <text class="m-txt">{{messages}}</text>
+   </view>
+   <!-- 跳转 -->
+   <view class="skip ">
+      <navigator class="goto" url="../product/product" open-type="switchTab">
+            关于我们
+      </navigator>
+      <navigator class="goto" url="../product/product" open-type="switchTab">
+            产品中心
+      </navigator>
+      <navigator class="goto" url="../product/product" open-type="switchTab">
+            合作加盟
+      </navigator>
+      <navigator class="goto" url="../product/product" open-type="switchTab">
+            联系我们
+      </navigator>
+   </view>
+   <!-- 轮播图 -->
+   <view class="slideshow">
+    <swiper class="s-swiper" indicator-dots="true"  autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{images}}" wx:key="index">
+          <swiper-item >
+            <image class="s-img" src="{{item}}" mode="scaleToFill"/>
+         </swiper-item>
+      </block> 
+     </swiper>
+   </view>
+    <!-- 商品展示 -->
+    <view class="show">
+       <view class="newGoods">
+          新品推荐(图片)
+       </view>
+       <view class="imgShow" wx:for="{{bigImg}}" wx:key="index">
+          <image class="showImg" src="{{item}}" mode="scaleToFill"/>
+       </view>
+       <view class="showGoods">
+          <view class="clearfix sg-top">
+             <text class="fl">秋冬校服系列</text>
+             <navigator class="fr more" url="#" open-type="navigate">
+                查看更多
+             </navigator>
+          </view>
+             <!-- 商品渲染 -->
+           <view class="sg-bottom clearfix">
+             <block wx:for="{{showGoods}}" wx:key="id">
+             <view class="goods">
+               <navigator class="gs-to" url="#" open-type="navigate">
+                   <image class="gs-goods" src="{{item.img}}" mode="scaleToFill"/>
+                   <text class="gs-name">{{item.title}}</text>
+                   <view class="gs-money">
+                      <text class="money-new">￥{{item.money}}</text>
+                      <text class="money-old">￥{{item.old}}</text>
+                   </view>
+               </navigator>
+              </view>
+             </block>
+            </view>
+          </view>
+    </view>
+    <!-- 地址 -->
+    <view class="footer">
+       <view class="f-top clearfix" >
+          <image class="f-img" src="../../icons/footer.png" mode="scaleToFill" />
+          <view class="f-txt">
+             <text class="f-s">学园校服</text>
+             <text class="f-x">
+                  营业时间：<text class="f-x-t">0:00-24:00</text>                       
+             </text>
+          </view>
+       </view>
+       <view class="f-bottom clearfix">
+         <navigator class="map fl" url="#" open-type="navigate">{{map}}</navigator>
+         <navigator class="phone fr" url="#" open-type="navigate">
+           <image class="p-img" src="../../icons/phone.png" mode="scaleToFill"/>
+         </navigator>
+       </view>
+    </view>
+</view>
