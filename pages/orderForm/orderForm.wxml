@@ -1,0 +1,62 @@
+<!--pages/orderForm/orderForm.wxml-->
+<view class="all">
+    <view class="site" bind:tap="goSite">
+       <block wx:if="{{site==false}}">
+         <text class="s-txt">你还没有收货地址，马上<text class="s-t-red">添加</text></text>
+         <van-icon name="arrow" class="s-icon"/>
+       </block>
+        <block wx:else>
+          <text class="s-txt">
+            <text class="s-t-t"><text class="s-name">黑衣人</text><text class="s-phone">15368777199</text></text>
+            <text class="s-t-t">北京市 北京市 西城区</text>
+          </text>
+          <van-icon name="arrow" class="s-icon"/>
+        </block>
+    </view>
+
+    <view class="top">
+      <image class="top-img" src="../../images/1.jpg" mode="aspectFit|aspectFill|widthFix" />
+       <text class="top-t">
+           <text class="t-name">夏季英伦系列</text>
+           <text class="t-money">￥0.00<text class="t-number">x1</text></text>
+       </text>
+    </view>
+
+    <view class="textbox">
+        <text class="t-remark">备注</text>
+        <textarea auto-focus class="t-area" bindinput='limit' maxlength='150'/>
+        <view class="clear"><text class="restrict">{{current}} / {{max}}</text></view>
+    </view>
+
+    <view class="main" >
+        <view class="m-t">
+          <text class="m-t-t">商品总额</text>
+          <text class="m-t-m">￥0</text>
+        </view>
+        <view class="m-t">
+          <text class="m-t-t">活动优惠</text>
+          <text class="m-t-m">-￥0</text>
+        </view>
+        <view class="m-t">
+          <text class="m-t-t">优惠卷</text>
+          <text class="m-t-r" wx:if="{{discounts}}">(无可用优惠卷)</text>
+          <text class="m-t-m">-￥0</text>
+          <van-icon name="arrow" class="m-t-icon"/>
+        </view>
+        <view class="m-t">
+          <text class="m-t-t">运费</text>
+          <text class="m-t-m">+￥0</text>
+        </view>
+        <text class="m-all">实付款：<text class="m-a-m">￥0</text></text>
+    </view>
+
+    <view class="footer">
+      <view class="f-txt">
+        <text class="t-txt">
+          <text class="f-money">合计：<text class="m-red">￥</text></text>
+          <text class="f-freight">运费(<text class="f-red">￥</text>)</text>
+        </text>
+      </view>
+      <view class="f-btn">提交订单</view>
+    </view>
+</view>

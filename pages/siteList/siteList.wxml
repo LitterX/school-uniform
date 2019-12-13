@@ -1,0 +1,36 @@
+<!--pages/siteList/siteList.wxml-->
+<view class="all">
+    <view class="main">
+        <block>
+            <view class="list">
+                <view class="l-l">
+                  <text class="l-txt"><text class="t-name">黑衣人</text><text class="t-phone">15368777199</text></text>
+                  <text class="l-txt t-site">北京市 北京市 西城区</text>
+                </view>
+                <view class="l-r">
+                  <image class="r-img" src="../../icons/bianji.png" mode="scaleToFill"/>
+                  <image class="r-img img-top" src="../../icons/shanchu.png" mode="scaleToFill"/>
+                </view>
+            </view>
+        </block>
+        <view class="btn">添加地址</view>
+    </view>
+   <view class="footer clearfix">
+       <navigator class="f-goto" url="../index/index" open-type="switchTab">
+           <image class="f-img" src="../../icons/shouye.png" mode="scaleToFill"/>
+           <text class="f-txt">首页</text>
+       </navigator>
+       <navigator class="f-goto" url="../product/product" open-type="switchTab">
+           <image class="f-img" src="../../icons/fenlei.png" mode="scaleToFill"/>
+           <text class="f-txt">产品中心</text>
+       </navigator>
+       <navigator class="f-goto" url="../goodsCar/goodsCar" open-type="switchTab">
+           <image class="f-img" src="../../icons/gouwuche.png" mode="scaleToFill"/>
+           <text class="f-txt">购物车</text>
+       </navigator>
+       <navigator class="f-goto" url="../me/me" open-type="switchTab">
+           <image class="f-img" src="../../icons/women.png" mode="scaleToFill"/>
+           <text class="f-txt">关于我们</text>
+       </navigator>
+  </view>
+</view>

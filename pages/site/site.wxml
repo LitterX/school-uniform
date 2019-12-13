@@ -1,0 +1,35 @@
+<!--pages/site/site.wxml-->
+<view class="all">
+        <form class="m-form">
+          <view class="main">
+            <view class="f-grid">
+                <text class="g-txt">收件人</text>
+                <input type="text" placeholder="请输入收件人姓名" class="g-ipt" bindinput="inputName" />
+                 <van-icon name="warning-o" class="g-icon" wx:if="{{nameShow}}"/>
+            </view>
+            <view class="f-grid">
+                <text class="g-txt">省/市/区</text>
+                <picker class="g-ipt" mode="region"  value="{{region}}" bindchange="bindRegionChange">
+                  <text wx:if="{{!address}}">请选择地址</text>
+                  <text wx:else>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+                </picker>
+                <van-icon name="arrow" class="g-icon c-icon"/>
+            </view>
+            <view class="f-grid">
+                <text class="g-txt">详细地址</text>
+                <input type="text" placeholder="请输入详细地址" class="g-ipt" bindinput="inputSite"/>
+                 <van-icon name="warning-o" class="g-icon" wx:if="{{siteShow}}"/>
+            </view>
+            <view class="f-grid">
+                <text class="g-txt">电话号码</text>
+                <input type="text" placeholder="请输入电话号码" class="g-ipt" bindinput="inputPhone"/>
+                 <van-icon name="warning-o" class="g-icon" wx:if="{{phoneShow}}"/>
+            </view>
+            <view class="b-grid" >
+                <text class="b-txt">常用地址</text>
+                <switch class="b-swh"  type="switch" bindchange="" checked="{{check}}"/>
+            </view>
+          </view>
+            <button class="btn">保存</button>
+        </form>
+</view>

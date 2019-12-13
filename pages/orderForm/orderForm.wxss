@@ -1,0 +1,206 @@
+/* pages/orderForm/orderForm.wxss */
+/* 地址部分 */
+.site{
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.s-txt{
+    padding-left: 50rpx;
+    display: block;
+}
+.s-t-red{
+    color: red;
+    text-decoration: underline;
+}
+.s-icon{
+    position: absolute;
+    top:50%;
+    right: 20rpx;
+    transform: translateY(-50%);
+}
+
+.s-t-t{
+    display: block;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #ccc;
+}
+.s-name{
+    color: black;
+    margin-right: 20rpx;
+    font-size: 30rpx;
+}
+.s-phone{
+    color: black;
+    font-size: 30rpx;
+}
+/* 商品*/
+.top{
+   height: 200rpx;
+   border-top: 1rpx solid #ccc;
+   border-bottom: 1rpx solid #ccc;
+   margin-top: 20rpx;
+   padding: 20rpx;
+}
+.top-img{
+    width: 120rpx;
+    height: 150rpx;
+    float: left;
+}
+
+.top-t{
+  float: left;
+  font-size: 30rpx;
+  margin-left: 50rpx;
+}
+.t-name{
+  display: block;
+  margin-bottom: 75rpx;
+}
+.t-money{
+  display: block;
+  font-size: 34rpx;
+  color: red;
+}
+.t-number{
+    font-size: 30rpx;
+    margin-left: 5rpx;
+    color: #ccc;
+}
+/* 备注 */
+.textbox{
+  position: relative;
+  margin-top: 10rpx;
+}
+
+.t-remark{
+    font-size: 30rpx;
+    color: #555555;
+    margin-left: 30rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.t-area{
+    width: 100%;
+    height: 200rpx;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 30rpx;
+}
+.clear{
+    position: absolute;
+    right: 10rpx;
+    top: 210rpx;
+    font-size: 28rpx;
+    color: #ccc;
+}
+/* 金额详情 */
+.main{
+    margin-top: 20rpx;
+    height: 360rpx;
+    border-top: 1rpx solid #ccc;
+    border-bottom: 1rpx solid #ccc;
+    width: 100%;
+    padding-left: 40rpx;
+}
+
+.m-t{
+    height: 70rpx;
+    line-height: 70rpx;
+    border-bottom: 1px solid #ccc;
+    font-size: 30rpx;
+    position: relative;
+}
+
+/* .m-t-t{
+ 
+} */
+
+.m-t-r{
+    color: red;
+    font-size: 26rpx;
+    padding-left: 10rpx;
+}
+
+.m-t-m{
+    float: right;
+    margin-right: 40rpx;
+    color: red;
+}
+
+.m-t-icon{
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #ccc;
+}
+
+.m-all{
+   float: right;
+   display: block;
+   font-size: 30rpx;
+   height: 80rpx;
+   line-height: 80rpx;
+   margin-right: 40rpx;
+}
+
+.m-a-m{
+    color: red;
+    font-size: 34rpx;
+}
+
+/* 底部 */
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    height: 110rpx;
+    border-top: 1px solid #cccccc;
+    width: 100%;
+}
+
+.f-txt{
+   flex: 7;
+}
+
+.t-txt{
+    display: block;
+    float: right;
+    font-size: 28rpx;
+    color: #ccc;
+    margin-right: 20rpx;
+}
+
+.f-money{
+  display: block;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.m-red{
+    color: red;
+    font-size: 32rpx;
+}
+
+.f-freight{
+  display: block;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.f-red{
+    color: red;
+}
+
+
+.f-btn{
+   flex: 3;
+   background-color: red;
+   color: white;
+   text-align: center;
+   line-height: 110rpx;
+}

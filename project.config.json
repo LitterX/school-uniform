@@ -9,14 +9,23 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wx9237560eb9bddefa",
+	"appid": "wxa8248cae54d5dfd2",
 	"projectname": "school%20uniform",
 	"debugOptions": {
 		"hidedInDevtools": []

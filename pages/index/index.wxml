@@ -51,7 +51,7 @@
            <view class="sg-bottom clearfix">
              <block wx:for="{{showGoods}}" wx:key="id">
              <view class="goods">
-               <navigator class="gs-to" url="#" open-type="navigate">
+               <navigator class="gs-to" url="../particulars/particulars?id={{item.id}}" open-type="navigate">
                    <image class="gs-goods" src="{{item.img}}" mode="scaleToFill"/>
                    <text class="gs-name">{{item.title}}</text>
                    <view class="gs-money">

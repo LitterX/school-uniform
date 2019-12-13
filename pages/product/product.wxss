@@ -1,1 +1,53 @@
 /* pages/product/product.wxss */
+
+/* 搜索框 */
+.search{
+  text-align: center;
+  border: 1rpx solid #cccccc;
+  margin: 10rpx;
+}
+.s-img{
+    width:40rpx;
+    height: 40rpx;
+    vertical-align:middle
+}
+.s-txt{
+    font-size: 30rpx;
+    color: #cccccc;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.m-l{
+    flex: 2;
+}
+
+.m-r{
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    flex: 8;
+
+}
+
+.m-goods{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.m-img{
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.m-txt{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 26rpx;
+    width: 100%;
+    display: block;
+}

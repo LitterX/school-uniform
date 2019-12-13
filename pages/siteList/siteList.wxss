@@ -1,0 +1,84 @@
+/* pages/siteList/siteList.wxss */
+/* 列表 */
+.list{
+    display: flex;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #cccccc;
+}
+
+.l-l{
+    flex: 8;
+    font-size: 32rpx;
+}
+
+.l-r{
+    flex: 2;
+    border-left: 2rpx solid #cccccc;
+}
+
+.l-txt{
+    display: block;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.t-name{
+    margin-right: 20rpx;
+}
+.t-site{
+    color: #888888;
+}
+
+.r-img{
+    width: 45rpx;
+    height: 45rpx;
+    display: block;
+    margin: 0 auto;
+}
+.img-top{
+    margin-top: 10rpx;
+}
+
+.btn{
+    width: 90%;
+    border: 1px solid #AA0000;
+    border-radius: 10rpx;
+    text-align: center;
+    margin: 0 auto;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 40rpx;
+    background-color: red;
+    color: white;
+}
+
+/* tab栏 */
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    z-index: 1;
+    background-color: white;
+    height: 120rpx;
+}
+
+.f-goto{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.f-img{
+  width: 65rpx;
+  height: 65rpx;
+  margin-top: 5rpx;
+}
+
+.f-txt{
+  font-size: 30rpx;
+  display: block;
+  color: #cccccc;
+  height: 40rpx;
+  line-height: 40rpx;
+}

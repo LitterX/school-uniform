@@ -1,0 +1,44 @@
+<view class="all">
+    <!-- tab栏 -->
+    <view class="top clearfix"  bind:tap="selectBtn">
+      <block wx:for="{{tops}}" wx:key="id">
+        <block wx:if="{{index==selectId}}">
+          <view class="t-txt t-red" id="{{item.id}}">{{item.title}}</view>
+        </block> 
+        <block wx:else>
+          <view class="t-txt" id="{{item.id}}">{{item.title}}</view>
+        </block>   
+      </block>
+     </view>
+    <!-- 商品列表 -->
+   <view class="main clearfix">
+       <block wx:for="{{goods}}" wx:key="index">
+          <navigator class="" url="../particulars/particulars?id={{item.id}}" open-type="navigate" >
+            <view class="list">
+                 <image class="l-img" src="{{item.image}}" mode="scaleToFill"/>
+                 <text class="l-name">{{item.name}}</text>
+                 <text class="l-money"><text class="m-r">￥{{item.newMoney}}</text><text class="m-c">￥{{item.oldMoney}}</text></text>
+            </view>
+           </navigator> 
+       </block>
+    </view>
+  <view class="footer clearfix">
+       <navigator class="f-goto" url="../index/index" open-type="switchTab">
+           <image class="f-img" src="../../icons/shouye.png" mode="scaleToFill"/>
+           <text class="f-txt">首页</text>
+       </navigator>
+       <navigator class="f-goto" url="../product/product" open-type="switchTab">
+           <image class="f-img" src="../../icons/fenlei.png" mode="scaleToFill"/>
+           <text class="f-txt">产品中心</text>
+       </navigator>
+       <navigator class="f-goto" url="../goodsCar/goodsCar" open-type="switchTab">
+           <image class="f-img" src="../../icons/gouwuche.png" mode="scaleToFill"/>
+           <text class="f-txt">购物车</text>
+       </navigator>
+       <navigator class="f-goto" url="../me/me" open-type="switchTab">
+           <image class="f-img" src="../../icons/women.png" mode="scaleToFill"/>
+           <text class="f-txt">关于我们</text>
+       </navigator>
+  </view>
+</view>
+

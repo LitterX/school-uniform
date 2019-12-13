@@ -1,0 +1,45 @@
+<!--pages/goodsCar/goodsCar.wxml-->
+<view class="null" wx:if="{{goodsCar==''}}">
+   <image class="n-img" src="../../icons/gouwuche.png" mode="scaleToFill"/>
+    <text class="n-txt">购物车空空如也</text>
+    <text class="n-txt">去挑几件中意的商品吧</text>
+</view>
+<view class="all" wx:else>
+    <!-- 物品展示 -->
+    <view class="main">
+    <block wx:for="{{goodsCar}}" wx:key="index">
+    <van-swipe-cell id="swipe-cell" right-width="{{ 44 }}" async-close bind:close="onClose">
+  <van-cell-group>
+    <van-cell>
+         <view class="m-goods clearfix">
+            <van-checkbox value="{{item.checked}}" bind:change="enChange" class="m-ck" data-id="{{item.id}}"/>
+            <image class="m-img" src="{{item.img}}" mode="scaleToFill"/>
+            <view class="m-txt">
+                <text class="m-t-t">{{item.title}}</text>
+                <text class="m-t-r">￥{{item.money}}</text>
+            </view>
+            <van-stepper value="{{ 1 }}" bind:change="numChange" input-width="28px" button-size="24px" disable-input/>
+         </view>
+    </van-cell>
+  </van-cell-group>
+  <view slot="right" class="clear">删除</view>
+   </van-swipe-cell>
+    </block>
+    <!-- 弹框 -->
+     <mp-dialog show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>确实是否删除</view>
+    </mp-dialog>
+    </view>
+    <!-- 底部结算 -->
+    <view class="footer">
+     <view class="cleafix dle">
+        <van-checkbox value="{{allChecked}}" bind:change="onChange"/>
+        <image class="f-img" src="../../icons/shanchu.png" mode="scaleToFill" bindtap="click"/>
+        <view class="f-txt">
+            <text class="f-t-t">合计:<text class="t-red">￥{{allMoney}}</text></text>
+            <text class="f-t-t">不含运费</text>
+        </view>
+     </view>
+       <view class="btn" bindtap="close">结算({{number}})</view> 
+    </view>
+</view>

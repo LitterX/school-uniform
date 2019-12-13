@@ -1,0 +1,20 @@
+<!--pages/me/me.wxml-->
+<view class="main">
+    <view class="header">
+        <image class="back-img" src="../../images/background.jpg" mode="scaleToFill"/>
+        <image class="head-img" src="../../images/head.jpg" mode="scaleToFill"/>
+        <text class="h-text">{{name}}</text>
+    </view>
+    <text class="center">酷奇仕幼儿园园服</text>
+    <view class="footer">
+        <text class="f-txt">联系方式</text>
+        <text class="f-txt" decode="{{true}}">名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：<text class="f-t-t">{{name}}</text></text>
+        <text class="f-txt">联系方式：<text class="f-t-t">{{phone}}</text></text>
+        <text class="f-txt">公司地址：<text class="f-t-t">{{site}}</text></text>
+    </view>
+    <view class="map">
+     <map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" covers="{{covers}}" show-location class="m-map">
+    </map>
+ </view>
+
+</view>

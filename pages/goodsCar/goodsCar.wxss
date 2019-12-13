@@ -1,0 +1,124 @@
+/* pages/goodsCar/goodsCar.wxss */
+/* 购物车没有东西的时候 */
+.null{
+  text-align: center;
+  padding-top: 50%;
+}
+
+.n-img{
+    width: 160rpx;
+    height: 160rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-txt{
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+}
+/* 购物车有东西的时候 */
+.m-goods{
+  position: relative;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.m-ck{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.m-img{
+    width: 180rpx;
+    height: 180rpx;
+    margin-left: 80rpx;
+    float: left;
+}
+
+.m-txt{
+    float: left;
+    font-size: 26rpx;
+    margin-left: 30rpx;
+}
+.m-t-t{
+    display: block;
+    margin-bottom: 80rpx;
+}
+.m-t-r{
+    color: red;
+    display: block;
+}
+
+.van-stepper{
+    position: absolute;
+    right: 0;
+    bottom: 20rpx;
+    margin-right: 10rpx;
+}
+
+.clear{
+    background-color: red;
+    display: block;
+    width: 100rpx;
+    height: 240rpx;
+    text-align: center;
+    line-height: 220rpx;
+    color: white;
+    font-weight: 700;
+}
+
+/* 底部 */
+.footer{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.dle{
+  flex: 7;
+  padding: 10rpx;
+  position: relative;
+  border: 1rpx solid #ccc;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.van-checkbox{
+    float: left;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+}
+
+.f-img{
+    width: 50rpx;
+    height: 50rpx;
+    float: left;
+    margin-top: 18rpx;
+    margin-left: 20rpx;
+}
+
+.f-txt{
+    float: right;
+}
+.f-t-t{
+    display: block;
+    font-size: 26rpx;
+    color: #ccc;
+}
+.t-red{
+    color: red;
+}
+
+
+.btn{
+  flex:3;
+  font-size: 30rpx;
+  background-color: red;
+  color: white;
+  padding-top: 25rpx;
+  text-align: center;
+  font-weight: 700;
+}

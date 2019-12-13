@@ -1,0 +1,59 @@
+/* pages/site/site.wxss */
+.main{
+    border-bottom: 1px solid #cccccc;
+    padding-left: 30rpx;
+}
+
+.f-grid{
+    font-size: 34rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+}
+
+.g-txt{
+    float: left;
+    display: block;
+    flex: 2;
+}
+
+.g-ipt{
+    float: left;
+    height: 100%;
+    flex: 7;
+    margin-left: 20rpx;
+    color: #777777;
+}
+
+.g-icon{
+    flex: 1;
+    color: red;
+    font-size: 38rpx;
+}
+
+.c-icon{
+    color: #ccc;
+    font-weight: 700;
+}
+
+.b-grid{
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.b-txt{
+   font-size: 34rpx;
+}
+.b-swh{
+   float: right;
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    margin: 20rpx;
+}
+
+button:not([size='mini']){
+    width: 80%;
+}

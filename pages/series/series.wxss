@@ -1,0 +1,97 @@
+/* pages/series/series.wxss */
+/* tab栏 */
+.top{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1rpx solid #ccc;
+    width: 100%;
+}
+
+.t-red{
+    border-bottom: 1px solid red;
+}
+
+.t-txt{
+   float: left;
+   width: 33.33%;
+   text-align: center;
+   font-size: 30rpx;
+   height: 80rpx;
+   line-height: 80rpx;
+}
+
+/* 商品 */
+.main{
+    margin-top: 90rpx;
+    margin-bottom: 120rpx;
+}
+.list{
+    float: left;
+    width: 47%;
+    padding:20rpx;
+    border: 1px solid #cccccc;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.l-img{
+    width: 200rpx;
+    height: 300rpx;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20rpx;
+}
+
+.l-name{
+    display: block;
+    font-size: 30rpx;
+    margin-bottom: 40rpx;
+}
+
+.l-money{
+    display: block;
+    font-size: 30rpx;
+}
+.m-r{
+    color: red;
+    margin-right: 10rpx;
+}
+.m-c{
+    color: #cccccc;
+    text-decoration: line-through;
+    font-size: 26rpx;
+}
+
+/* tab栏 */
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    z-index: 1;
+    background-color: white;
+    height: 120rpx;
+}
+
+.f-goto{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.f-img{
+  width: 65rpx;
+  height: 65rpx;
+  margin-top: 5rpx;
+}
+
+.f-txt{
+  font-size: 30rpx;
+  display: block;
+  color: #cccccc;
+  height: 40rpx;
+  line-height: 40rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarBackgroundColor": "#0094ff",
+  "navigationBarTitleText": "订单提交"
+}

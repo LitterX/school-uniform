@@ -10,7 +10,7 @@
 
 .message{
   padding:10rpx;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1rpx solid #cccccc;
   background-color: #ccc;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .m-txt{
-  font-size: 12px;
+  font-size: 26rpx;
   padding-left: 10rpx;
 }
 
@@ -33,7 +33,7 @@
   float: left;
   width: 25%;
   text-align: center;
-  font-size: 14px;
+  font-size: 30rpx;
   height: 60rpx;
   line-height: 60rpx;
 }
@@ -70,7 +70,7 @@
 
 .sg-top{
   padding: 10rpx;
-  font-size: 14px;
+  font-size: 30rpx;
   border-bottom: 1rpx solid #ccc;
   margin-left: 10rpx;
   margin-right: 10rpx;
@@ -89,7 +89,7 @@
   width: 48%;
   float: left;
   margin: 5rpx;
-  border: 1px solid #ccc;
+  border: 1rpx solid #ccc;
 }
 
 .gs-goods{
@@ -98,7 +98,7 @@
 }
 
 .gs-name{
-  font-size: 14px;
+  font-size: 30rpx;
   padding-left: 5rpx;
 }
 
@@ -108,12 +108,12 @@
 }
 
 .money-new{
-  font-size: 14px;
+  font-size: 30rpx;
   color: red;
 }
 
 .money-old{
-  font-size: 12px;
+  font-size: 26rpx;
   text-decoration: line-through;
   color:#ccc;
   padding-left: 10rpx;
@@ -122,7 +122,7 @@
 /* 底部 */
 .footer{
   margin-top: 10rpx;
-  border-top: 1px solid #ccc;
+  border-top: 1rpx solid #ccc;
 }
 
 .f-top{
@@ -139,15 +139,15 @@
   float: left;
 }
 .f-s{
-  font-size: 14px;
+  font-size: 30rpx;
 }
 .f-x{
-  font-size: 12px;
+  font-size: 26rpx;
 }
 .f-x-t{
   background-color: #00CC00;
   color: white;
-  border: 1px solid #00CC00;
+  border: 1rpx solid #00CC00;
   border-radius: 20rpx;
   padding-left: 5rpx;
   padding-right: 5rpx;
@@ -160,7 +160,7 @@
 }
 
 .map{
-  font-size: 12px;
+  font-size: 26rpx;
 }
 
 .phone{
